@@ -1,2 +1,0 @@
-# redblue-site
-RedBlue homepage.
