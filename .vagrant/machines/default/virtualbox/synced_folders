@@ -1,0 +1,1 @@
+{"virtualbox":{"/srv/www/redblue-site":{"owner":"vagrant","group":"http","guestpath":"/srv/www/redblue-site","hostpath":"/Users/Hugh/Sites/redblue-site","disabled":false,"__vagrantfile":true}}}
