@@ -1,3 +1,4 @@
 # RewriteEngine On
 # RewriteCond %{HTTPS} !=on
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}:8443 [L,R=301]
+Redirect 302 / https://www.facebook.com/redblueco/
