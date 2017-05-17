@@ -37,3 +37,33 @@ section + section {
   margin-right: 15px;
 }
 
+/*
+  Font: Accord Alternate
+  Designer: Aakash Soneri <http://www.aakashsoneri.com/>
+  Licensed
+    by: FontSpring <http://www.fontspring.com>
+    to: Hugh Guiney <http://nospoon.tv>
+    on: November 12th, 2011
+    for: Unlimited domains
+*/
+
+@font-face {
+    font-family: 'Accord Alternate';
+    src: url('AccordAlternate_Bold-webfont.woff2') format('woff2'),
+         url('AccordAlternate_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Accord Alternate';
+    src: url('AccordAlternate_Med-webfont.woff2') format('woff2'),
+         url('AccordAlternate_Med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logotype {
+  margin-top: -40px;
+  font-family: 'Accord Alternate';
+}
