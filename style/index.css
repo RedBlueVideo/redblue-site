@@ -37,7 +37,9 @@ section + section {
   margin-right: 15px;
 }
 
-
+.list-inline--vlog {
+  width: 374px;
+}
 
 @media ( max-width: 480px ) {
 
