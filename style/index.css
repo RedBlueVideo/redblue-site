@@ -37,6 +37,17 @@ section + section {
   margin-right: 15px;
 }
 
+@media ( max-width: 480px ) {
+
+  .list-inline-item {
+    display: block !important;
+  }
+
+  .list-inline-item--social:first-child {
+    margin-right: 0 !important;
+  }
+}
+
 /*
   Font: Accord Alternate
   Designer: Aakash Soneri <http://www.aakashsoneri.com/>
