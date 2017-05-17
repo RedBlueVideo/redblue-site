@@ -28,3 +28,12 @@ section {
 section + section {
   margin-top: 3rem;
 }
+
+.list-inline-item {
+  vertical-align: middle;
+}
+
+.list-inline-item--social:first-child {
+  margin-right: 15px;
+}
+
