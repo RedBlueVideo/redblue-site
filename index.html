@@ -4,7 +4,10 @@
   <title>RedBlue</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:image" content="https://redblue.video/img/redblue.png" />
+  <meta property="og:image" content="https://redblue.video/img/redblue-logo--open-graph.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
   <link rel="stylesheet" href="style/index.css" />
@@ -26,7 +29,10 @@
   <div class="container">
     <div class="col col-12">
       <header class="header">
-        <img class="logo" src="img/redblue.png" width="200" height="200" alt=" " />
+        <picture>
+          <source type="image/svg+xml" srcset="/img/redblue-logo.svg" />
+          <img class="logo" src="/img/redblue.png" srcset="/img/redblue-logo.png 1x, /img/redblue-logo@2x.png 2x, /img/redblue-logo@3x.png 3x" width="200" height="200" alt="logo" longdesc="/img/redblue-logo.html" />
+        </picture>
         <h1 class="logotype">RedBlue</h1>
         <p>Open-source Hypervideo Platform</p>
         <nav>
