@@ -21,19 +21,6 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
   <link rel="stylesheet" href="style/index.css" />
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-99429830-1', 'auto');
-    ga('send', 'pageview');
-
-    if (window.history) {
-      history.replaceState({}, document.title, window.location.href.split('?')[0]);
-    }
-  </script>
 </head>
 <body>
   <div class="container">
@@ -44,7 +31,7 @@
           <img class="logo" src="/img/redblue.png" srcset="/img/redblue-logo.png 1x, /img/redblue-logo@2x.png 2x, /img/redblue-logo@3x.png 3x" width="200" height="200" alt="logo" longdesc="/img/redblue-logo.html" />
         </picture>
         <h1 class="logotype">RedBlue</h1>
-        <p>Open-source Hypervideo Platform</p>
+        <p>Video Annotations</p>
         <nav>
           <p><a href="/guide/">Developer Guide</a> | <a href="https://github.com/RedBlueVideo">Github</a> | <a href="https://www.youtube.com/c/HughGuiney">Vlog</a> | <a href="https://twitter.com/RedBlueVideo">Twitter</a> | <a href="https://www.facebook.com/RedBlueVideo/">Facebook</a> | <a href="mailto:hugh@redblue.video">E-mail</a></p>
         </nav>
@@ -122,7 +109,42 @@
       <footer class="text-center">
         <p>&copy; 2017–2018 Hugh Guiney. All rights reserved.</p>
       </footer>
-    </div>
+    </div><!-- /col -->
+  </div><!-- /container -->
+  <div id="scripts">
+    <script id="google-analytics-loader">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-99429830-1', 'auto');
+      ga('send', 'pageview');
+
+      if (window.history) {
+        history.replaceState({}, document.title, window.location.href.split('?')[0]);
+      }
+    </script>
+    <script id="facebook-analytics-loader">
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '270333566921477',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v3.1'
+        });
+
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
   </div>
 </body>
 </html>
