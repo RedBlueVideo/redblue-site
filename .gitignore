@@ -2,3 +2,4 @@ _site/
 logs/
 sftp-config.json
 .DS_Store
+fcgi-bin/
