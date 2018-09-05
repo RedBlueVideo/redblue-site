@@ -1,208 +1,72 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-<head>
-  <title>RedBlue</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="RedBlue allows content producers to create “hypervideo” (interactive online video), such as choose-your-own-story films." />
-  <!-- Facebook Open Graph -->
-  <meta property="og:title" content="RedBlue" />
-  <meta property="og:description" content="RedBlue allows content producers to create “hypervideo” (interactive online video), such as choose-your-own-story films." />
-  <meta property="og:url" content="https://redblue.video" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://redblue.video/img/redblue-logo--open-graph.png" />
-  <meta property="og:image:secure_url" content="https://redblue.video/img/redblue-logo--open-graph.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="fb:app_id" content="270333566921477" />
-  <!-- /Facebook Open Graph -->
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <style>
-    .logotype {
-      margin-top: -40px;
-      font-family: 'Accord Alternate', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-      /* font-size: 2.5rem; */
-      /* margin-bottom: .5rem; */
-      font-weight: 600;
-      /* line-height: 1.1; */
-      /* height: 2.75rem; */
-      /* overflow: hidden; */
-      /* margin: 0; */
-    }
+---
+title: RedBlue
+layout: default
+---
 
-    .logotype > span {
-      font-weight: normal;
-      letter-spacing: -.05rem;
-    }
-    </style>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" /> -->
-  <link rel="stylesheet" href="style/index.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="col col-12">
-      <header class="header">
-        <a class="home" href="https://redblue.video" title="Home">
-          <picture>
-            <source type="image/svg+xml" srcset="/img/redblue-logo.svg" />
-            <img class="logo" src="/img/redblue.png" srcset="/img/redblue-logo.png 1x, /img/redblue-logo@2x.png 2x, /img/redblue-logo@3x.png 3x" width="200" height="200" alt="logo" longdesc="/img/redblue-logo.html" />
-          </picture>
-        </a>
-        <hgroup>
-          <h1 class="logotype">RedBlue</h1>
-        </hgroup>
-        <p>Video Annotations</p>
-        <nav>
-          <a href="/guide/">Developer Guide</a> | <a href="https://www.youtube.com/c/HughGuiney">Founder’s Vlog</a><br />
-          <a href="https://github.com/RedBlueVideo">GitHub</a> | <a href="https://twitter.com/RedBlueVideo">Twitter</a> | <a href="https://www.facebook.com/RedBlueVideo/">Facebook</a> | <a href="mailto:hugh@redblue.video">E-mail</a>
-        </nav>
-      </header>
-      <main>
-        <section id="what">
-          <h2>What It Is</h2>
-          <p>RedBlue allows content producers to create “hypervideo” (interactive online video), such as choose-your-own-story films.</p>
-          <p>This is achieved by annotating videos with time-based links and <abbr>UI</abbr> using our open standard, <a href="https://github.com/RedBlueVideo/hvml"><abbr>HVML</abbr></a> (Hypervideo Markup Language).</p>
-          <p>Hypervideo provides a more immersive experience than regular video, offering higher audience engagement rates, more rewatchability, better brand recall with ads, and a unique selling point for filmmakers.</p>
-        </section>
+<section id="what">
+  <h2>What It Is</h2>
+  <p>RedBlue allows content producers to create “hypervideo” (interactive online video), such as choose-your-own-story films.</p>
+  <p>This is achieved by annotating videos with time-based links and <abbr>UI</abbr> using our open standard, <a href="https://github.com/RedBlueVideo/hvml"><abbr>HVML</abbr></a> (Hypervideo Markup Language).</p>
+  <p>Hypervideo provides a more immersive experience than regular video, offering higher audience engagement rates, more rewatchability, better brand recall with ads, and a unique selling point for filmmakers.</p>
+</section>
 
-        <section id="prototype" class="text-center">
-          <p><a class="btn btn-primary btn-lg" href="https://redbluevideo.github.io/redblue/www/" target="_blank">Launch Prototype</a></p>
-          <p>(requires the latest version of Google Chrome on Desktop)</p>
-        </section>
+<section id="prototype" class="text-center">
+  <p><a class="btn btn-primary btn-lg" href="https://redbluevideo.github.io/redblue/www/" target="_blank">Launch Prototype</a></p>
+  <p>(requires the latest version of Google Chrome on Desktop)</p>
+</section>
 
-        <section id="functionality">
-          <h2>Functionality</h2>
-          <section id="functionality-new-videos">
-            <h3>For new videos only</h3>
-            <p class="text-center">(has to be planned for at the content production stage)</p>
-            <ul>
-              <li>Choose Your Own Story (CYOS): stories with multiple timelines and alternate endings</li>
-              <li>Switching between alternate synchronized video streams at-will</li>
-              <li>Anything else with heavy reliance on user input</li>
-            </ul>
-          </section>
-          <section id="functionality-new-existing-videos">
-            <h3>For new or existing videos:</h3>
-            <ul>
-              <li>Branded video player</li>
-              <li>Link to external webpages</li>
-              <li>Link internally to other videos that load within the same player</li>
-              <li>In-video CTAs such as donation, newsletter signup, polling, etc.</li>
-              <li>Tag people, products, music, and locations that occur within the video</li>
-              <li>Add menus and chapters à la DVD/Blu-ray</li>
-              <li>Pop-up video: information boxes with trivia, commentary, etc.</li>
-              <li>Contextualization: display explanatory content (e.g. a Wikipedia article) in a sidebar</li>
-              <li>Your choice of video hosting: YouTube, Vimeo, or self-hosted. (The actual interactive player would have to be on your own website though.)</li>
-            </ul>
-          </section>
-        </section>
+<section id="functionality">
+  <h2>Functionality</h2>
+  <section id="functionality-new-videos">
+    <h3>For new videos only</h3>
+    <p class="text-center">(has to be planned for at the content production stage)</p>
+    <ul>
+      <li>Choose Your Own Story (CYOS): stories with multiple timelines and alternate endings</li>
+      <li>Switching between alternate synchronized video streams at-will</li>
+      <li>Anything else with heavy reliance on user input</li>
+    </ul>
+  </section>
+  <section id="functionality-new-existing-videos">
+    <h3>For new or existing videos:</h3>
+    <ul>
+      <li>Branded video player</li>
+      <li>Link to external webpages</li>
+      <li>Link internally to other videos that load within the same player</li>
+      <li>In-video CTAs such as donation, newsletter signup, polling, etc.</li>
+      <li>Tag people, products, music, and locations that occur within the video</li>
+      <li>Add menus and chapters à la DVD/Blu-ray</li>
+      <li>Pop-up video: information boxes with trivia, commentary, etc.</li>
+      <li>Contextualization: display explanatory content (e.g. a Wikipedia article) in a sidebar</li>
+      <li>Your choice of video hosting: YouTube, Vimeo, or self-hosted. (The actual interactive player would have to be on your own website though.)</li>
+    </ul>
+  </section>
+</section>
 
-        <section id="availability">
-          <h2>Availability</h2>
-          <p>As the software is only in the prototype phase, any of these features would have to be custom-built for a fee. Would work on Desktop and Mobile. Could also do a “Couch Mode” where the video is played back on a Chromecast or Google Cast–enabled Smart TV, with clickable interactive elements appearing on a smartphone.</p>
-          <p>In addition to software development, can consult on all aspects of interactive video production: ideation, writing, directing, producing, and editing.</p>
-        </section>
+<section id="availability">
+  <h2>Availability</h2>
+  <p>As the software is only in the prototype phase, any of these features would have to be custom-built for a fee. Would work on Desktop and Mobile. Could also do a “Couch Mode” where the video is played back on a Chromecast or Google Cast–enabled Smart TV, with clickable interactive elements appearing on a smartphone.</p>
+  <p>In addition to software development, can consult on all aspects of interactive video production: ideation, writing, directing, producing, and editing.</p>
+</section>
 
-        <section id="about">
-          <h2>About</h2>
-          <p>RedBlue is founded and operated by <a href="https://hughguiney.com">Hugh Guiney</a> (hello@hughguiney.com), who documents his experience building a startup on his vlog. Subscribe below on <a href="https://www.youtube.com/c/HughGuiney">YouTube</a> or <a href="https://www.facebook.com/HughsVlog/">Facebook</a>.</p>
-          <ul class="list-inline list-inline--vlog">
-            <li class="list-inline-item list-inline-item--social">
-              <div class="g-ytsubscribe" data-channelid="UCGPCcxdykgp6hgvL0XE3yaA" data-layout="full" data-count="default"></div>
-            </li>
-            <li class="list-inline-item list-inline-item--social">
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHughsVlog%2F&tabs&width=200&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1117428231678998" width="180" height="70" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </li>
-          </ul>
+<section id="about">
+  <h2>About</h2>
+  <p>RedBlue is founded and operated by <a href="https://hughguiney.com">Hugh Guiney</a> (hello@hughguiney.com), who documents his experience building a startup on his vlog. Subscribe below on <a href="https://www.youtube.com/c/HughGuiney">YouTube</a> or <a href="https://www.facebook.com/HughsVlog/">Facebook</a>.</p>
+  <ul class="list-inline list-inline--vlog">
+    <li class="list-inline-item list-inline-item--social">
+      <div class="g-ytsubscribe" data-channelid="UCGPCcxdykgp6hgvL0XE3yaA" data-layout="full" data-count="default"></div>
+    </li>
+    <li class="list-inline-item list-inline-item--social">
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHughsVlog%2F&tabs&width=200&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1117428231678998" width="180" height="70" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    </li>
+  </ul>
 
-          <section id="why-redblue">
-            <h3>Why “RedBlue”?</h3>
-            <p>Namesake is the red pill/blue pill option that Morpheus gives Neo in <cite>The Matrix</cite>. Neo is faced with a decision that creates a branching point in the story. We know which option he took in the film, but what if he took the other? What would the rest of the film look like? With RedBlue, all potential storylines can be canonical.</p>
-          </section>
-        </section>
+  <section id="why-redblue">
+    <h3>Why “RedBlue”?</h3>
+    <p>Namesake is the red pill/blue pill option that Morpheus gives Neo in <cite>The Matrix</cite>. Neo is faced with a decision that creates a branching point in the story. We know which option he took in the film, but what if he took the other? What would the rest of the film look like? With RedBlue, all potential storylines can be canonical.</p>
+  </section>
+</section>
 
-        <section id="status">
-          <h2>Status</h2>
-          <p>RedBlue is currently seeking early adopter brand clients and pre-seed funding to develop a minimum viable product to bring to market.</p>
-        </section>
-      </main>
-      <footer class="text-center">
-        <p>&copy; 2017–2018 Hugh Guiney. All rights reserved.</p>
-      </footer>
-    </div><!-- /col -->
-  </div><!-- /container -->
-  <div id="scripts">
-    <script id="google-analytics-loader">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-99429830-1', 'auto');
-      ga('send', 'pageview');
-
-      if (window.history) {
-        history.replaceState({}, document.title, window.location.href.split('?')[0]);
-      }
-    </script>
-    <script id="facebook-analytics-loader">
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '270333566921477',
-          cookie     : true,
-          xfbml      : true,
-          version    : 'v3.1'
-        });
-
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <script src="https://apis.google.com/js/platform.js"></script>
-  </div>
-  <style scoped="scoped">
-    @font-face {
-      font-family: 'Accord Alternate';
-      src: url('/style/AccordAlternate_Med.woff2') format('woff2'),
-           url('/style/AccordAlternate_Med.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Accord Alternate';
-      src: url('/style/AccordAlternate_Reg.woff2') format('woff2'),
-           url('/style/AccordAlternate_Reg.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Courier Prime Code';
-        src: local('CourierPrimeCode-Regular'),
-            url('fonts/CourierPrimeCode-Regular.woff2') format('woff2'),
-            url('fonts/CourierPrimeCode-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    /* @font-face {
-        font-family: 'Courier Prime Code';
-        src: local('Courier Prime Code Italic'), local('CourierPrimeCode-Italic'),
-            url('fonts/CourierPrimeCode-Italic.woff2') format('woff2'),
-            url('fonts/CourierPrimeCode-Italic.woff') format('woff');
-        font-weight: normal;
-        font-style: italic;
-    } */
-  </style>
-</body>
-</html>
+<section id="status">
+  <h2>Status</h2>
+  <p>RedBlue is currently seeking early adopter brand clients and pre-seed funding to develop a minimum viable product to bring to market.</p>
+</section>
