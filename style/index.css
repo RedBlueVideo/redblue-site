@@ -1,36 +1,306 @@
-body {
-  font-family: sans-serif;
+*, ::after, ::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-header {
-  text-align: center; 
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  /* background-color: #fff; */
+  /* font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; */
+  font-family: sans-serif;
+  /* font-weight: 300; */
+  min-height: 100vh;
+  width: 85%;
+  width: 85vw;
+  max-width: 1920px;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  /* background: url(funky-lines-25pc.png) repeat fixed; */
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  /* white-space: pre-wrap; */
+  display: block;
+  /* overflow: scroll; */
+  padding: .5rem;
+  font-size: .75rem;
+}
+
+/* hgroup {
+  margin-top: -1rem;
+} */
+
+/* hgroup > * {
+  margin: 0;
+} */
+
+/* hgroup > :last-child {
+  font-weight: normal;
+} */
+
+img {
+  vertical-align: middle;
+}
+
+.full-example {
+  max-height: 50vh;
+}
+
+.tab {
+  display: none
+}
+
+.tab:target,
+.tab.tab--active {
+  display: block;
+}
+
+/* .instructions {} */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.3rem;
+}
+
+.step {
+  /* margin-left: 1rem; */
+  margin-left: 0;
+}
+
+.step + dd:not(.step) {
+  margin-top: .5rem;
+}
+
+
+.instructions dd:not(.step) {
+  padding-left: 1.3rem;
+}
+
+.instructions dd:not(.step)::before {
+  content: '➡';
+  margin-right: .5rem;
+  margin-left: -1.35rem;
+  display: inline-block;
+  /* display: list-item;
+  list-style-type: square; */
+}
+
+.step.step--code + .step {
+  margin-top: 1.5rem;
+}
+
+dt + .step {
+  margin-top: .75rem;
+}
+
+[role="banner"] {
+  text-align: center;
   margin-bottom: 3rem;
+}
+
+summary > h3 {
+  display: inline;
+}
+
+pre > code,
+pre > .hljs {
+  border-radius: .5rem;
+  padding: 0.9rem;
+}
+
+code ins {
+  text-decoration: none;
+  background: hsla(190, 100%, 50%, .125);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  /* margin: .25rem 0; */
+  /* display: inline-block; */
+
+  text-decoration: none;
+  /* background: hsla(160, 130%, 50%, 0.9); */
+  padding: 0.3333333333333rem;
+  border-radius: 0.25rem;
+}
+
+/*
+  Font: Accord Alternate
+  Designer: Aakash Soneri <http://www.aakashsoneri.com/>
+  Licensed
+    by: FontSpring <http://www.fontspring.com>
+    to: Hugh Guiney <http://nospoon.tv>
+    on: November 12th, 2011
+    for: Unlimited domains
+*/
+
+section,
+article {
+  margin-top: 1.5rem;
+}
+
+article + article,
+section + section,
+section + article,
+article + section {
+  margin-top: 3rem;
+}
+
+article + .tab,
+section + .tab {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p, dl, ul, ol, h1, h2, h3, h4, h5, h6, footer, pre, nav {
+  /* line-height: 1.75; */
+  max-width: 39em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  text-align: center;
+}
+
+.h1, h1 {
+  font-size: 2.5rem;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h3, h3 {
+  font-size: 1.75rem;
+}
+
+/* pre,
+.step.step--code {
+  width: 80vw;
+  max-width: 100%;
+} */
+
+/* pre > code {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+} */
+
+p > code,
+dd > code {
+  /* font-size: 1.125rem; */
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+code {
+  font-family: 'Courier Prime Code', 'Courier Prime', 'Courier New', Courier, monospace;
+}
+
+main {
+  flex: 1;
+}
+
+summary {
+  cursor: default;
 }
 
 footer {
   margin-top: 3rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* footer {
+  padding: 3rem 0;
+  font-size: 0.9em;
+} */
+
+/* footer > p {
+  margin: 0;
   text-align: center;
+} */
+
+@media only screen and ( max-width: 25em ) {
+  pre {
+    white-space: pre-line;
+  }
 }
 
-p, ul, ol, dl, h1, h2, h3, h4, h5, h6 {
-  max-width: 39em;
-  margin-right: auto;
-  margin-left: auto;
+a {
+  color: #0275d8;
+  text-decoration: none;
 }
 
-section {
-  margin-top: 1.5rem;
+a:focus, a:hover {
+  color: #014c8c;
+  text-decoration: underline;
 }
 
-section + section {
-  margin-top: 3rem;
+a:active, a:hover {
+  outline-width: 0;
+}
+
+.home {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
 }
 
 .list-inline-item {
+  display: inline-block;
   vertical-align: middle;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 5px;
 }
 
 .list-inline-item--social:first-child {
@@ -57,33 +327,44 @@ section + section {
   }
 }
 
-/*
-  Font: Accord Alternate
-  Designer: Aakash Soneri <http://www.aakashsoneri.com/>
-  Licensed
-    by: FontSpring <http://www.fontspring.com>
-    to: Hugh Guiney <http://nospoon.tv>
-    on: November 12th, 2011
-    for: Unlimited domains
-*/
-
-@font-face {
-    font-family: 'Accord Alternate';
-    src: url('AccordAlternate_Bold-webfont.woff2') format('woff2'),
-         url('AccordAlternate_Bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: bold;
+[role=button], a, area, button, input, label, select, summary, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
-@font-face {
-    font-family: 'Accord Alternate';
-    src: url('AccordAlternate_Med-webfont.woff2') format('woff2'),
-         url('AccordAlternate_Med-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid hsla(0, 0%, 0%, 0);
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.logotype {
-  margin-top: -40px;
-  font-family: 'Accord Alternate';
+.btn-primary {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(208, 98%, 43%);
+  border-color: hsl(208, 98%, 43%);
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: .75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: .3rem;
+}
+
+.text-center {
+    text-align: center!important;
 }
