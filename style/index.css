@@ -209,10 +209,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
 }
 
+.branding {
+  margin-bottom: 1.5rem;
+}
+
 .subhead {
   /* font-size: 1.5em; */
   font-size: 1.5rem;
   line-height: inherit
+}
+
+.subhead.subhead--tagline {
+  line-height: 1;
+  font-family: 'Accord Alternate', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
