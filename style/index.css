@@ -392,3 +392,18 @@ a:active, a:hover {
 .text-center {
     text-align: center!important;
 }
+
+/* JavaScript UI */
+
+a[role="button"] {
+  cursor: default;
+}
+
+[type="email"][readonly] {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

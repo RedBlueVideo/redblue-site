@@ -56,7 +56,7 @@
         <p>Video Annotations</p>
         <nav>
           <a href="/guide/">Developer Guide</a> | <a href="https://www.youtube.com/c/HughGuiney">Founder’s Vlog</a><br />
-          <a href="https://github.com/RedBlueVideo">GitHub</a> | <a href="https://twitter.com/RedBlueVideo">Twitter</a> | <a href="https://www.facebook.com/RedBlueVideo/">Facebook</a> | <a href="mailto:hugh@redblue.video">E-mail</a>
+          <a href="https://github.com/RedBlueVideo">GitHub</a> | <a href="https://twitter.com/RedBlueVideo">Twitter</a> | <a href="https://www.facebook.com/RedBlueVideo/">Facebook</a> | <a id="email-link" class="email-link" href="mailto:hugh@redblue.video">E-mail</a>
         </nav>
       </header>
       <main>
@@ -68,6 +68,45 @@
     </div><!-- /col -->
   </div><!-- /container -->
   <div id="scripts">
+    <script>
+      var $emailLink = document.getElementById( 'email-link' );
+      $emailLink.setAttribute( 'title', 'Copy e-mail address' );
+      $emailLink.setAttribute( 'role', 'button' );
+
+      var emailAddress = $emailLink.getAttribute( 'href' ).split( 'mailto:' );
+      emailAddress = emailAddress[1];
+
+      var $dummyInput = document.createElement( 'input' );
+      // $dummyInput.setAttribute( 'style', '' );
+      $dummyInput.setAttribute( 'id', 'email-input' );
+      $dummyInput.setAttribute( 'type', 'email' );
+      $dummyInput.setAttribute( 'readonly', 'readonly' );
+      $dummyInput.setAttribute( 'value', emailAddress );
+
+      var $label = document.createElement( 'label' );
+      $label.setAttribute( 'for', 'email-input' );
+      $label.textContent = $emailLink.textContent;
+      $emailLink.textContent = '';
+      $emailLink.appendChild( $label );
+      $emailLink.parentNode.appendChild( $dummyInput );
+
+      // <input id="email-address" id="email-address" type="hidden" readonly="readonly" value="hugh@redblue.video" />
+      $emailLink.addEventListener( 'keypress', handleEmailKeyPress, false );
+      $emailLink.addEventListener( 'click', copyEmailAddressToClipboard, false );
+
+      function handleEmailKeyPress( event ) {
+        if ( event.key === ' ' || event.key === 'Enter' ) {
+          copyEmailAddressToClipboard( event );
+        }
+      }
+
+      function copyEmailAddressToClipboard( event ) {
+        event.preventDefault();
+        $dummyInput.select();
+        document.execCommand( 'copy' );
+        alert( 'Copied e-mail address to clipboard' );
+      }
+    </script>
     <script id="google-analytics-loader">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
