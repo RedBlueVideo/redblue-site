@@ -431,7 +431,7 @@ a[role="button"] {
   font-size: 1rem;
   font-family: inherit;
   padding: 0.5rem;
-  border: 1px solid #292b2c;
+  border: 1px solid rgb(208, 208, 208);
   width: 10rem;
 }
 
