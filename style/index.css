@@ -428,6 +428,14 @@ a[role="button"] {
 }
 
 [type="email"][readonly] {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.5rem;
+  border: 1px solid #292b2c;
+  width: 10rem;
+}
+
+[type="email"][readonly].hidden {
   opacity: 0;
   pointer-events: none;
   cursor: default;
