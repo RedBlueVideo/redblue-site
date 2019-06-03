@@ -92,18 +92,22 @@ dt {
 }
 
 dd {
-  margin-left: 1.3rem;
+  /* margin-left: 1.3rem; */
+  margin: 0 auto 0 1.3rem;
 }
 
 .step {
   /* margin-left: 1rem; */
-  margin-left: 0;
+  /* margin-left: 0; */
+  margin: 1rem auto 1rem 0;
 }
 
-.step + dd:not(.step) {
-  margin-top: .5rem;
+.step + dd:not(.step),
+p + ul,
+p + ol {
+  /* margin-top: .5rem; */
+  margin-top: -.75rem;
 }
-
 
 .instructions dd:not(.step) {
   padding-left: 1.3rem;
@@ -203,10 +207,18 @@ dl, ol, ul {
   margin-bottom: 1rem;
 }
 
-p, ul, ol, h1, h2, h3, h4, h5, h6, footer, pre, nav, dt, dd:not(.step--code), img {
+ul, ol {
+  padding-left: 1rem;
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6, footer, pre, nav, dt, dd:not(.step--code),
+img {
   max-width: 39rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6, footer, pre, nav, dt, dd:not(.step--code) {
   display: block;
   line-height: 1.75;
 }
